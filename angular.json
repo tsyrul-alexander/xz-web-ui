@@ -1,0 +1,33 @@
+{
+  "version": 1,
+  "projects": {
+    "xz-web-ui": {
+      "projectType": "application",
+      "root": "",
+      "sourceRoot": "src",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:browser",
+          "options": {
+            "outputPath": "dist/xz-web-ui",
+            "index": "src/index.html",
+            "main": "src/main.ts",
+            "polyfills": "src/polyfills.ts",
+            "tsConfig": "tsconfig.json",
+            "aot": true
+          }
+        },
+        "serve": {
+          "builder": "@angular-devkit/build-angular:dev-server",
+          "options": {
+            "browserTarget": "xz-web-ui:build"
+          }
+        }
+      }
+    }
+  },
+  "defaultProject": "xz-web-ui",
+  "cli": {
+    "analytics": "f4367eea-ad41-4a3e-990c-a4eaf18070d6"
+  }
+}
