@@ -1,15 +1,30 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
+import {AuthService} from "../../../../core/services/auth.service";
+import {AuthInterceptor} from "../../../../core/interceptors/auth_interceptor";
+import {ErrorResponse} from "../../../../core/models/response/error_response";
 
 @Component({
   selector: 'login',
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.css']
 })
-export class LoginComponent implements OnInit {
+export class LoginComponent {
+  public login: string = "";
+  public password: string = "";
+  public isSaveData: boolean = false;
 
-  constructor() { }
+  constructor(private authService: AuthService) {
 
-  ngOnInit(): void {
   }
 
+  loginClick() {
+    this.authService.login(this.login, this.password).subscribe(response => {
+        this.saveToken(response.token);
+    }, (error: ErrorResponse) =>
+      console.log(error.message)//todo
+    );
+  }
+  saveToken(token: string) {
+      AuthInterceptor.setToken(token, !this.isSaveData);
+  }
 }

@@ -1,4 +1,4 @@
-export class Error {
+export class ErrorResponse {
 	message: string;
 	code: number;
 }
