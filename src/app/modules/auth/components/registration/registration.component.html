@@ -1,1 +1,17 @@
-<p>registration works!</p>
+<div class="registration container">
+    <div class="row">
+        <div class="col-xl-4 offset-xl-8 login-form">
+            <div>
+                <div class="header-login-form">
+                    <label>{{"identity.registration" | translate}}</label>
+                </div>
+                <string-form-control [(ngModel)]="model.name" placeholder="{{'identity.enter_name' | translate}}"></string-form-control>
+                <string-form-control [(ngModel)]="model.login" placeholder="{{'identity.enter_login' | translate}}"></string-form-control>
+                <password-form-control [(ngModel)]="model.password" placeholder="{{'identity.enter_password' | translate}}"></password-form-control>
+                <div class="form-group">
+                    <button type="submit" class="btn btn-primary login-submit-btn" (click)="registrationClick()">{{"identity.registration" | translate}}</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

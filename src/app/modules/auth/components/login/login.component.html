@@ -3,15 +3,14 @@
         <div class="col-xl-4 offset-xl-8 login-form">
             <div>
                 <div class="header-login-form">
-                    <label i18n="main header@@welcome">{{"identity.header" | translate}}</label>
+                    <label>{{"identity.login_header" | translate}}</label>
                 </div>
                 <string-form-control [(ngModel)]="login" placeholder="{{'identity.enter_login' | translate}}"></string-form-control>
                 <password-form-control [(ngModel)]="password" placeholder="{{'identity.enter_password' | translate}}"></password-form-control>
                 <div class="form-group">
                     <div class="row">
-                        <div class="col-6 custom-control custom-checkbox">
-                            <input id="isSaveDataCheckBox" type="checkbox" class="custom-control-input" [(ngModel)]="isSaveData"/>
-                            <label for="isSaveDataCheckBox" class="custom-control-label">{{"identity.save_credentials" | translate}}</label>
+                        <div class="col-6">
+                            <checkbox-control caption="{{'identity.save_credentials' | translate}}" value="isSaveData"></checkbox-control>
                         </div>
                         <div class="col-6">
                             <a href="#">{{"identity.forgo_password" | translate}}</a>

@@ -4,7 +4,7 @@ import {LoginComponent} from "./components/login/login.component";
 import {AuthService} from "../../core/services/auth.service";
 import {HttpClientModule, HTTP_INTERCEPTORS } from "@angular/common/http";
 import {FormsModule} from "@angular/forms";
-import {AuthInterceptor} from "../../core/interceptors/auth_interceptor";
+import {AuthInterceptor} from "../../core/interceptors/auth-interceptor";
 import {TranslateModule} from "@ngx-translate/core";
 import { RegistrationComponent } from './components/registration/registration.component';
 import {RouterModule} from "@angular/router";

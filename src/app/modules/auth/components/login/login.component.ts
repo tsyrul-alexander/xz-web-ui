@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import {AuthService} from "../../../../core/services/auth.service";
-import {AuthInterceptor} from "../../../../core/interceptors/auth_interceptor";
-import {ErrorResponse} from "../../../../core/models/response/error_response";
+import {AuthInterceptor} from "../../../../core/interceptors/auth-interceptor";
+import {ErrorResponse} from "../../../../core/models/response/error-response";
 
 @Component({
   selector: 'login',
@@ -13,9 +13,7 @@ export class LoginComponent {
   public password: string = "";
   public isSaveData: boolean = false;
 
-  constructor(private authService: AuthService) {
-
-  }
+  constructor(private authService: AuthService) {  }
 
   loginClick() {
     this.authService.login(this.login, this.password).subscribe(response => {

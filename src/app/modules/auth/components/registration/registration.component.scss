@@ -1,0 +1,15 @@
+@import "~src/asset/style/variables";
+@import "~src/asset/style/base";
+.registration {
+  .login-form {
+    background: $componentBackground;
+    height: $fullViewPortHeight;
+    .header-login-form {
+      text-align: center;
+      @include base-header()
+    }
+    .login-submit-btn {
+      width: 100%;
+    }
+  }
+}

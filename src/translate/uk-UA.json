@@ -8,9 +8,10 @@
     }
   },
   "identity": {
+    "enter_name": "Вкажіть ім'я",
     "enter_login": "Вкажіть логін",
     "enter_password": "Вкажіть пароль",
-    "header": "Авторизуйтель для продовження",
+    "login_header": "Авторизуйтесь для продовження",
     "forgo_password": "Забули пароль",
     "save_credentials": "Зберегти дані",
     "authorize": "Авторизуватись",

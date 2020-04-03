@@ -1,7 +1,7 @@
 import {Observable} from "rxjs";
 import {map, mergeAll} from "rxjs/operators";
 import {Injectable} from "@angular/core";
-import {BaseResponse} from "../models/response/base_response";
+import {BaseResponse} from "../models/response/base-response";
 
 @Injectable()
 export abstract class BaseHttpService {
