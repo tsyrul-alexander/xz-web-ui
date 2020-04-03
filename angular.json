@@ -14,13 +14,24 @@
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.json",
-            "aot": true
+            "aot": true,
+            "styles": [
+              "node_modules/bootstrap/dist/css/bootstrap.css"
+            ],
+            "scripts": [
+              "node_modules/jquery/dist/jquery.js",
+              "node_modules/bootstrap/dist/js/bootstrap.js"
+            ],
+            "assets": [
+              "src/app/translate"
+            ]
           }
         },
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "xz-web-ui:build"
+            "browserTarget": "xz-web-ui:build",
+            "proxyConfig": "proxy.config.json"
           }
         }
       }
