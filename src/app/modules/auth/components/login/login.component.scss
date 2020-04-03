@@ -1,0 +1,18 @@
+@import "~src/asset/style/variables";
+@import "~src/asset/style/base";
+.login {
+	.login-form {
+		background: $componentBackground;
+		height: $fullViewPortHeight;
+		.header-login-form {
+			text-align: center;
+			@include base-header()
+		}
+		.custom-checkbox {
+			padding-left: 2.5rem;
+		}
+		.login-submit-btn {
+			width: 100%;
+		}
+	}
+}

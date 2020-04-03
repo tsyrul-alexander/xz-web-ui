@@ -1,0 +1,7 @@
+@import "~src/asset/style/variables";
+.app {
+	.app-body {
+		background-image: $backgroundImagePath;
+		height: $fullViewPortHeight;
+	}
+}

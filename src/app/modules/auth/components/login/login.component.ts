@@ -6,7 +6,7 @@ import {ErrorResponse} from "../../../../core/models/response/error_response";
 @Component({
   selector: 'login',
   templateUrl: './login.component.html',
-  styleUrls: ['./login.component.css']
+  styleUrls: ['./login.component.scss']
 })
 export class LoginComponent {
   public login: string = "";

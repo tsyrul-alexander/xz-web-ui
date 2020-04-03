@@ -6,13 +6,18 @@ import {HttpClientModule, HTTP_INTERCEPTORS } from "@angular/common/http";
 import {FormsModule} from "@angular/forms";
 import {AuthInterceptor} from "../../core/interceptors/auth_interceptor";
 import {TranslateModule} from "@ngx-translate/core";
+import { RegistrationComponent } from './components/registration/registration.component';
+import {RouterModule} from "@angular/router";
+import {SharedModule} from "../../shared/shared.module";
+import {BaseControlValueAccessor} from "../../core/form/base-control-value-accessor";
 
 @NgModule({
-  declarations: [LoginComponent],
-  imports: [CommonModule, HttpClientModule, FormsModule, TranslateModule],
+  declarations: [LoginComponent, RegistrationComponent],
+  imports: [CommonModule, HttpClientModule, FormsModule, TranslateModule, RouterModule, SharedModule],
   providers: [
       AuthService,
+      BaseControlValueAccessor,
     { provide: HTTP_INTERCEPTORS, useClass: AuthInterceptor, multi: true }
   ]
 })
-export class LoginModule { }
+export class AuthModule { }
