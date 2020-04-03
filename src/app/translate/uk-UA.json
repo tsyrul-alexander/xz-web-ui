@@ -1,0 +1,18 @@
+{
+  "validate": {
+    "pattern": {
+      "email": "Не валідний email"
+    },
+    "required": {
+      "field": "Поле є обов'язковим"
+    }
+  },
+  "identity": {
+    "enter_login": "Вкажіть логін",
+    "enter_password": "Вкажіть пароль",
+    "header": "Авторизуйтель для продовження",
+    "forgo_password": "Забыли пароль",
+    "save_credentials": "Зберегти дані",
+    "authorize": "Авторизуватись"
+  }
+}
