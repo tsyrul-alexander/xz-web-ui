@@ -23,7 +23,8 @@
               "node_modules/bootstrap/dist/js/bootstrap.js"
             ],
             "assets": [
-              "src/app/translate"
+              "src/translate",
+              "src/asset"
             ]
           }
         },
@@ -40,5 +41,10 @@
   "defaultProject": "xz-web-ui",
   "cli": {
     "analytics": "f4367eea-ad41-4a3e-990c-a4eaf18070d6"
+  },
+  "schematics": {
+    "@schematics/angular:component": {
+      "styleext": "scss"
+    }
   }
 }

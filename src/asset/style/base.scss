@@ -1,0 +1,18 @@
+@import "~src/asset/style/variables";
+
+label {
+	color: $textFontColor;
+}
+
+a {
+	color: $textFontColor;
+}
+
+@mixin base-header($color: $headerFontColor) {
+	font-family: times, Times New Roman, times-roman, georgia, serif;
+	font-size: 48px;
+	line-height: 40px;
+	letter-spacing: -1px;
+	color: $color;
+	font-weight: 100;
+}

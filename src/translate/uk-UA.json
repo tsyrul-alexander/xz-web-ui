@@ -11,8 +11,9 @@
     "enter_login": "Вкажіть логін",
     "enter_password": "Вкажіть пароль",
     "header": "Авторизуйтель для продовження",
-    "forgo_password": "Забыли пароль",
+    "forgo_password": "Забули пароль",
     "save_credentials": "Зберегти дані",
-    "authorize": "Авторизуватись"
+    "authorize": "Авторизуватись",
+    "registration": "Реєстрація"
   }
 }
