@@ -1,0 +1,12 @@
+<div class="section-view container">
+	<div class="content row">
+		<ng-content></ng-content>
+	</div>
+	<div class="page-navigator">
+		<mat-paginator [length]="length"
+					   [pageSize]="pageSize"
+					   [pageSizeOptions]="pageSizeOptions"
+					   (page)="pageChange($event.pageIndex, $event.pageSize, $event.length)">
+		</mat-paginator>
+	</div>
+</div>

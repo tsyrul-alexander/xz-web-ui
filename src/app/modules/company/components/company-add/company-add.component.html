@@ -1,0 +1,15 @@
+<div class="add">
+    <div class="columns">
+        <form action="">
+            <div class="form-group">
+                <div class="form-group">
+                    <string-form-control caption="{{'data.company.name' | translate}}" name="companyName"
+                         [(ngModel)]="company.name" placeholder="{{'data.company.enter_name' | translate}}">
+                    </string-form-control>
+                    <country-list [(ngModel)]="country" name="country"></country-list>
+                    <button type="submit" class="btn btn-primary">{{'view.save' | translate}}</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

@@ -1,0 +1,14 @@
+<div class="view-type">
+    <div class="list">
+        <div class="btn-group">
+            <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                {{'data.view_type.header' | translate}}
+            </button>
+            <div class="dropdown-menu dropdown-menu-right">
+                <button *ngFor="let vt of viewTypes" class="dropdown-item" type="button" (click)="setViewType(vt.viewType)">
+                    {{'data.view_type.' + vt.key | translate}}
+                </button>
+            </div>
+        </div>
+    </div>
+</div>

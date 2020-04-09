@@ -1,7 +1,10 @@
 @import "~src/asset/style/variables";
 .app {
+	background-image: $backgroundImagePath;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: $fullViewPortHeight;
 	.app-body {
-		background-image: $backgroundImagePath;
-		height: $fullViewPortHeight;
+		background-color: white;
 	}
 }

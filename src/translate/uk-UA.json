@@ -1,4 +1,9 @@
 {
+  "resources": {
+    "icon": {
+      "company": "https://cdn2.iconfinder.com/data/icons/mini-icon-set-map-location/91/Location_22-512.png"
+    }
+  },
   "validate": {
     "pattern": {
       "email": "Не валідний email"
@@ -16,5 +21,19 @@
     "save_credentials": "Зберегти дані",
     "authorize": "Авторизуватись",
     "registration": "Реєстрація"
+  },
+  "view": {
+    "save": "Сохранить"
+  },
+  "data": {
+    "company": {
+      "name": "Название",
+      "enter_name": "Вкажіть назву"
+    },
+    "view_type": {
+      "header": "Вид",
+      "list": "Список",
+      "tile": "Плитки"
+    }
   }
 }

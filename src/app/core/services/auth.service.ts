@@ -4,7 +4,6 @@ import {Observable} from 'rxjs';
 import {BaseHttpService} from "./base-http.service";
 import {LoginResponse} from "../models/response/login-response";
 import {RegistrationResponse} from "../models/response/registration-response";
-import {Registration} from "../models/registration";
 import {RegistrationRequest} from "../models/request/registration-request";
 
 @Injectable()

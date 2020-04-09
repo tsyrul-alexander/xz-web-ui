@@ -1,0 +1,14 @@
+.item-row {
+  display: flex;
+  flex-wrap: wrap;
+}
+.item-row-image {
+  padding: 0;
+  flex: 0 1 40px;
+}
+.row-content {
+  flex: 1 1 auto;
+}
+.item-row-image img {
+  max-width: 100%;
+}

@@ -1,0 +1,11 @@
+<div class="company-section container">
+    <div class="header row">
+    </div>
+    <div class="list">
+        <section-view class="row">
+            <div *ngFor="let item of items" class="col-6">
+                <company-item [item]="item"></company-item>
+            </div>
+        </section-view>
+    </div>
+</div>

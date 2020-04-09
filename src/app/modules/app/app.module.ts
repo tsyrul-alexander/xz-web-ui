@@ -7,12 +7,14 @@ import {APP_ROUTES} from "./app.routes";
 import {TranslateLoader, TranslateModule} from '@ngx-translate/core';
 import {TranslateHttpLoader} from '@ngx-translate/http-loader';
 import {HttpClient, HttpClientModule} from '@angular/common/http';
+import {CompanyModule} from "../company/company.module";
 
 @NgModule({
   declarations: [AppComponent],
   bootstrap:    [AppComponent],
   imports: [
     AuthModule,
+    CompanyModule,
     BrowserModule,
     RouterModule.forRoot(APP_ROUTES),
     HttpClientModule,
