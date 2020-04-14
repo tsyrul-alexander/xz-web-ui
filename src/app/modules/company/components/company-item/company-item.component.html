@@ -2,8 +2,8 @@
     <div class="container">
         <mat-card class="example-card">
             <mat-card-header>
-                <div *ngIf="item.iconUrl != null" mat-card-avatar class="header-image">
-                    <img mat-card-avatar src="{{item.iconUrl}}" alt="image not found">
+                <div *ngIf="item.icon != null" mat-card-avatar class="header-image">
+                    <img mat-card-avatar src="{{item.icon.url}}" alt="image not found">
                 </div>
                 <mat-card-title>{{item.name}}</mat-card-title>
                 <mat-card-subtitle>{{item.category && item.category.name}}</mat-card-subtitle>

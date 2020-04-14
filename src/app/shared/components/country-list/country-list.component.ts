@@ -3,7 +3,6 @@ import {Country} from "../../../core/models/data/address/country";
 import {Observable} from "rxjs";
 import {BaseControlValueAccessor} from "../../../core/form/base-control-value-accessor";
 import {NG_VALUE_ACCESSOR} from "@angular/forms";
-import {MOCK_COMPANY_LIST} from "../../../mock/mock-company";
 
 @Component({
   selector: 'country-list',
@@ -24,7 +23,6 @@ export class CountryListComponent extends BaseControlValueAccessor<Country> impl
   constructor() {
     super();
     //new Observable<Country[]>(subscriber => this.updateListFn = subscriber.next);
-    this.countries = MOCK_COMPANY_LIST;
   }
   setCountry(country: Country) {
     this.value = country;

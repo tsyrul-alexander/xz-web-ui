@@ -2,5 +2,8 @@
     <label *ngIf="caption != ''" for="input">
         {{caption}}
     </label>
-    <input class="form-control form-control-lg" id="input" type="text" [placeholder]="placeholder">
+    <input class="form-control form-control-lg" id="input" type="text"
+           [placeholder]="placeholder"
+           [value]="value"
+           (change)="value = $event.target.value">
 </div>

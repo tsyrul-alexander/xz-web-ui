@@ -11,10 +11,6 @@ export class AuthService extends BaseHttpService {
 
   private url = "/api/auth";
 
-  constructor(private http: HttpClient) {
-    super()
-  }
-
   login(login: string, password: string): Observable<LoginResponse> {
     return this.castObject(this.http.get<LoginResponse>(this.url + "/authorization/login" +
         "?login=" + login + "&password=" + password), LoginResponse);

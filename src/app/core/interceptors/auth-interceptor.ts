@@ -4,7 +4,7 @@ export class AuthInterceptor implements HttpInterceptor  {
 	static AuthorizedStorageKey: string  = "Token";
 	static AuthorizedHeaderKey: string  = "Authorization";
 	intercept(req: HttpRequest<any>, next: HttpHandler): Observable<HttpEvent<any>> {
-		AuthInterceptor.setAuthHeaders(req);
+		req = AuthInterceptor.setAuthHeaders(req);
 		return next.handle(req);
 	}
 	static setAuthHeaders(req: HttpRequest<any>) : HttpRequest<any> {
@@ -16,7 +16,7 @@ export class AuthInterceptor implements HttpInterceptor  {
 			setHeaders: {}
 		};
 		config.setHeaders[AuthInterceptor.AuthorizedHeaderKey] = token;
-		return  req.clone(config);
+		return req.clone(config);
 	}
 	static getToken() : string {
 		return sessionStorage.getItem(AuthInterceptor.AuthorizedStorageKey) ||
