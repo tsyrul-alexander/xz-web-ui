@@ -10,9 +10,10 @@ import { CompanyPageComponent } from './components/company-page/company-page.com
 import { CompanyAddComponent } from './components/company-add/company-add.component';
 import {FormsModule} from "@angular/forms";
 import {MatCardModule} from "@angular/material/card";
+import { CategoryAddComponent } from './components/category-add/category-add.component';
 
 @NgModule({
-  declarations: [CompanySectionComponent, CompanyItemComponent, CompanyPageComponent, CompanyAddComponent],
+  declarations: [CompanySectionComponent, CompanyItemComponent, CompanyPageComponent, CompanyAddComponent, CategoryAddComponent],
 	imports: [
 		CommonModule, SharedModule, TranslateModule, RouterModule, FormsModule, MatCardModule
 	],

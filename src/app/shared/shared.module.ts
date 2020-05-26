@@ -17,17 +17,28 @@ import {MatProgressSpinnerModule} from "@angular/material/progress-spinner";
 import {OverlayModule} from '@angular/cdk/overlay';
 import { SectionViewComponent } from './components/section-view/section-view.component';
 import {MatPaginatorModule} from "@angular/material/paginator";
+import { StringLczFormControlComponent } from './components/string-lcz-form-control/string-lcz-form-control.component';
+import { LczValueListModalComponent } from './components/lcz-value-list-modal/lcz-value-list-modal.component';
+import { ModalViewComponent } from './components/modal-view/modal-view.component';
+import {BaseModalComponent} from "./components/base-modal/base-modal.component";
+import {ModalService} from "../core/services/modal-service";
+import {MatDialogModule} from "@angular/material/dialog";
 
 @NgModule({
 	declarations: [
+		BaseModalComponent,
 		StringFormControlComponent,
 		PasswordFormControlComponent,
 		CheckboxControlComponent,
 		SectionViewTypeComponent,
 		CountryListComponent,
-		SectionViewComponent
+		SectionViewComponent,
+		StringLczFormControlComponent,
+		LczValueListModalComponent,
+		ModalViewComponent
 	],
 	imports: [
+		MatDialogModule,
 		CommonModule,
 		OverlayModule,
 		TranslateModule,
@@ -48,7 +59,9 @@ import {MatPaginatorModule} from "@angular/material/paginator";
 		CheckboxControlComponent,
 		SectionViewTypeComponent,
 		CountryListComponent,
-		SectionViewComponent
-	]
+		SectionViewComponent,
+		StringLczFormControlComponent
+	],
+	providers:[ModalService]
 })
 export class SharedModule { }

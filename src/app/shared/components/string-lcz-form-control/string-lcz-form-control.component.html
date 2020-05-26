@@ -1,0 +1,16 @@
+<div class="form-group string-lcz-form-control">
+	<label *ngIf="caption != ''" for="input">
+		{{caption}}
+	</label>
+	<div class="input-group">
+		<input class="form-control form-control-lg" id="input" type="text"
+			   [placeholder]="placeholder"
+			   [value]="value?.DefValue"
+			   (change)="onDefValueChange($event.target.value)">
+		<div class="input-group-append">
+			<button type="button" class="btn btn-default" aria-label="Left Align" (click)="openLcz()">
+				Btn
+			</button>
+		</div>
+	</div>
+</div>

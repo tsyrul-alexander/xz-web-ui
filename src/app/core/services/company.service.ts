@@ -20,8 +20,13 @@ export class CompanyService extends BaseHttpService {
 	}
 
 	public getCompanies(): Observable<BaseCompany[]> {
-		return this.http.post<BaseCompany[]>(this.url + "/company/list", {
+		return new Observable<BaseCompany[]>(subscriber => {
+			setTimeout(() => {
+				subscriber.next(null)
+			}, 5000)
+		})
+		//return this.http.post<BaseCompany[]>(this.url + "/company/list", {
 
-		});
+		//});
 	}
 }

@@ -23,7 +23,8 @@
     "registration": "Реєстрація"
   },
   "view": {
-    "save": "Сохранить"
+    "save": "Сохранить",
+    "culture_value": "Значення для культур"
   },
   "data": {
     "company": {

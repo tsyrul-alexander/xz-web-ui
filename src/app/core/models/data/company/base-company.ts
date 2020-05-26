@@ -2,7 +2,7 @@ import {BaseLookup} from "../base/base-lookup";
 import {BaseUser} from "../user/base-user";
 import {BaseAddress} from "../address/base-address";
 import {Address} from "../address/address";
-import {Category} from "./category";
+import {Category} from "./category/category";
 import {Image} from "../image/image";
 
 export class BaseCompany extends BaseLookup {

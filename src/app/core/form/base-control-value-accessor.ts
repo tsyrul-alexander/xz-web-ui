@@ -12,7 +12,9 @@ export class BaseControlValueAccessor<T> implements ControlValueAccessor {
 	@Input('value')
 	set value(value: T) {
 		this._value = value;
-		this.propagateChangeFn(value);
+		if (this.propagateChangeFn) {
+			this.propagateChangeFn(value);
+		}
 	}
 
 

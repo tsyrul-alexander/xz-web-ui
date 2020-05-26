@@ -8,11 +8,13 @@ import {TranslateLoader, TranslateModule} from '@ngx-translate/core';
 import {TranslateHttpLoader} from '@ngx-translate/http-loader';
 import {HttpClient, HttpClientModule} from '@angular/common/http';
 import {CompanyModule} from "../company/company.module";
+import {MatDialogModule} from "@angular/material/dialog";
 
 @NgModule({
   declarations: [AppComponent],
   bootstrap:    [AppComponent],
   imports: [
+    MatDialogModule,
     AuthModule,
     CompanyModule,
     BrowserModule,
